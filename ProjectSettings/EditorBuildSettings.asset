@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scena p.unity
     guid: 225a0a25978a1c1409631583db9253a0
+  - enabled: 1
+    path: Assets/scena a.unity
+    guid: 4e42fca50626a22468cb9a0e5a747019
   m_configObjects: {}
