@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/lvl 3.unity
     guid: b669cfc89c8195f449d691b2dac06a49
+  - enabled: 1
+    path: Assets/Finish.unity
+    guid: 7a7f6d6a259a29f46b8c4a713ff5081a
   m_configObjects: {}
