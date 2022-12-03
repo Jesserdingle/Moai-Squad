@@ -24,11 +24,11 @@ public class ruchgracza : MonoBehaviour
 
         if(ruch > 0)
         {
-            gameObject.transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
         }
         if(ruch < 0)
         {
-            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
         }
     }
 }
