@@ -6,6 +6,7 @@ public class ruchgracza : MonoBehaviour
     private Rigidbody2D _rigidbody;
     public float szybkoscRuchu = 5f;
     public float SkokMoc = 1f;
+    public Animator animator;
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -19,6 +20,15 @@ public class ruchgracza : MonoBehaviour
         {
             _rigidbody.AddForce(new Vector2(0, SkokMoc), ForceMode2D.Impulse);
         }
+        animator.SetFloat("predkosc", Mathf.Abs(ruch));
 
+        if(ruch > 0)
+        {
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
+        }
+        if(ruch < 0)
+        {
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
 }
